@@ -9,13 +9,25 @@ public class postfix_evaluation_conversion{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String exp = br.readLine();
         Stack<Integer> ans = new Stack<>();
-        for(int i=0;i<exp.length();i++){
-            
+        Stack<String> infix = new Stack<>(); 
+        for(int i=0;i < exp.length();i++){
+            char curr = exp.charAt(i);
+            if(curr == '+' || curr == '-' || curr == '*' || curr == '/'){
+                int v1 = ans.pop(),v2 = ans.pop();
+                ans.push(solve(v2, v1, curr));
+                String v22 = infix.pop(),v11 = infix.pop();
+                infix.push("("+v11+curr+v22+")");
+            }else{
+                infix.push(""+curr);
+                ans.push(Integer.parseInt(""+curr));
+            }
         }
+        System.out.println(ans.peek());
+        System.out.println(infix.peek());
+        prefix(infix.peek());
     }
 
-    public void prefix(String exp){
-        Stack<String> postfix = new Stack<>();
+    public static void prefix(String exp){
         Stack<String> prefix = new Stack<>();
         Stack<Character> operator = new Stack<>();
         for(int i=0;i < exp.length();i++){
@@ -56,6 +68,23 @@ public class postfix_evaluation_conversion{
             v2 = prefix.pop();
             prefix.push(op+v2+v1);
         }
+        System.out.println(prefix.peek());
+    }
+
+    public static int solve(int v1,int v2,char ch){
+        if(ch == '*'){
+            return v1*v2;
+        }
+        if(ch == '/'){
+             return (v1/v2);
+        }
+        if(ch == '+'){
+             return (v1+v2);
+        }
+        if(ch == '-'){
+            return (v1-v2);
+        }
+        return 0 ;
     }
 
     public static int getPriority(char ch){
