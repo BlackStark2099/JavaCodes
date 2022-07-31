@@ -1,6 +1,5 @@
 package JavaCodes.stack_and_queue;
 import java.io.*;
-import java.util.*;
 
 public class normal_queue {
     public static class CustomQueue {
