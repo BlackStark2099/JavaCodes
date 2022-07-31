@@ -1,5 +1,4 @@
 package JavaCodes.stack_and_queue;
-import java.util.*;
 import java.io.*;
 
 public class dynamic_queue{

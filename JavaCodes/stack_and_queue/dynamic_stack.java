@@ -1,7 +1,6 @@
 package JavaCodes.stack_and_queue;
 
 import java.io.*;
-import java.util.*;
 
 public class dynamic_stack {
     public static class CustomStack {
