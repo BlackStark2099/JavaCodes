@@ -33,7 +33,7 @@ public class dynamic_stack {
                 data[i] = temp[i];
             }
             tos++;
-            data[tos] = val;
+            data[tos] = val; 
           } else {
             tos++;
             data[tos] = val;
