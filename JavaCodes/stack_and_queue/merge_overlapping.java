@@ -27,6 +27,8 @@ public class merge_overlapping{
         int start,end;
         public Pair(int start,int end) {
             this.start = start;
+
+            
             this.end = end;
         }
 
