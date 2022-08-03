@@ -1,3 +1,5 @@
+package JavaCodes.stack_and_queue;
+
 import java.io.*;
 import java.util.*;
 
