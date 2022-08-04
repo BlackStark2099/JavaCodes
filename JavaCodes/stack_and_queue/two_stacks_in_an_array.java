@@ -1,7 +1,6 @@
 package JavaCodes.stack_and_queue;
 
 import java.io.*;
-import java.util.*;
 
 public class  two_stacks_in_an_array{
     public static class TwoStack {
