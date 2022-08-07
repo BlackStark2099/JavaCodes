@@ -42,7 +42,7 @@ public class normal_stack{
         tos--;
         return data[tos+1];
       }
-    }
+    } 
 
     int top() {
        // write ur code here
