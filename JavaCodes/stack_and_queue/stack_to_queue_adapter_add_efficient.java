@@ -39,7 +39,7 @@ public class stack_to_queue_adapter_add_efficient{
 
     int peek() {
         if(this.size() == 0){
-            System.out.println("Queue underflow");
+            System.out.println("Queue underfflow");
             return -1;
         }
         while(mainS.size() != 1){
