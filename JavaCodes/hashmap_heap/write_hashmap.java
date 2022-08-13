@@ -17,7 +17,7 @@ public class write_hashmap{
     }
 
     private int size; // n
-    private LinkedList<HMNode>[] buckets; // N = buckets.length
+    private LinkedList<HMNode>[] buckets; 
 
     public HashMap() {
       initbuckets(4);
@@ -33,9 +33,35 @@ public class write_hashmap{
 
     public void put(K key, V value) throws Exception {
       int bi = hashFunction(key);
-      size++;
-      buckets[bi].add(new HMNode(key, value));
-      return;
+      int di = findInBucket(key,bi);
+      if(di == -1){
+        buckets[bi].add(new HMNode(key, value));
+        size++;
+      }else{
+        HMNode pair = buckets[bi].get(di);
+        pair.value = value; 
+      }  
+      double lambda = (size*1.0)/buckets.length;
+      if(lambda > 2.0){
+        rehash();
+      } 
+    }
+
+    public void rehash(){
+      size = 0;
+      LinkedList<HMNode>  [] oldBuckects = buckets;
+      initbuckets(2*buckets.length);
+      for(int i=0;i<oldBuckects.length;i++){
+        LinkedList<HMNode> lList = oldBuckects[i];
+        for(int j=0;j<oldBuckects[i].size();j++){
+          HMNode temp = lList.get(j);
+          try {
+            put(temp.key, temp.value);
+          } catch (Exception e) {
+            e.printStackTrace();
+          }
+        }
+      }
     }
 
     public V get(K key) throws Exception {
@@ -70,27 +96,28 @@ public class write_hashmap{
         size--;
         return pair.value;
       }
-      // write your code here
     }
 
     public ArrayList<K> keyset() throws Exception {
       ArrayList<K> keys = new ArrayList<>();
       for(int i=0;i<buckets.length;i++){
-       LinkedList<HMNode> lList = buckets[i];
-       HMNode temp = lList.get(0);
-       keys.add(temp.key);
+        for(int j=0;j<buckets[i].size();j++){
+          LinkedList<HMNode> lList = buckets[i];
+          HMNode temp = lList.get(j);
+          keys.add(temp.key);
+        }
       }
       return keys;
-      // write your code here
     }
 
     public int size() {
-      // write your code here
       return size;
     }
 
     public int hashFunction(K key){
-      return 
+      int hash = key.hashCode();
+      int bi = Math.abs(hash)%buckets.length;
+      return bi;
     }
 
     public int findInBucket(K key, int bi){
