@@ -1,5 +1,8 @@
 {
     "dynamic_programming" :[
-        
+        {
+            "climb_stairs_with_variable_jumps" :"https://nados.io/question/climb-stairs-with-variable-jumps", 
+            "Video" : "https://youtu.be/-k2ozoh2Ur0?t=7354" 
+        }
     ]
 }
