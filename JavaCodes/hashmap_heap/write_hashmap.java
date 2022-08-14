@@ -31,7 +31,7 @@ public class write_hashmap{
       }
     }
 
-    public void put(K key, V value) throws Exception {
+    public void put(K key, V value) throws Exception {eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
       int bi = hashFunction(key);
       int di = findInBucket(key,bi);
       if(di == -1){
