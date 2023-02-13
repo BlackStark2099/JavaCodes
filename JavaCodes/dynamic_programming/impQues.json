@@ -8,6 +8,11 @@
             "Goldmine" : "https://nados.io/question/goldmine",
             "Video" : "",
             "remark" : "not solved in first attempt ! please retry"
+        },
+        {
+            "target_sum_dp":"https://nados.io/question/target-sum-subsets-dp",
+            "Video" : "",
+            "remark" : "not solved in first attempt ! please retry"    
         }
     ]
 }
