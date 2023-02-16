@@ -1,13 +1,8 @@
-import java.util.Arrays;
+package LeetCode;
 
-public class coin_change_1_leetcode {
-    public static void main(String[] args) {
-        int [] arr = new int[]{186,419,83,408};
-        
-        System.out.println(coinChange(arr, 6249));
-    }
-    public static int coinChange(int[] coins, int amount) {
-        if(amount == 0) return 0;
+class Solution {
+    public int coinChange(int[] coins, int amount) {
+       if(amount == 0) return 0;
         int [] dp = new int[amount+1];
 
         for(int i=0;i<amount+1;i++){
@@ -30,13 +25,8 @@ public class coin_change_1_leetcode {
                 }
                 
             }
-            // for(int p =0;p<amount+1;p++){
-            //     System.out.print(dp[p]+ " ");
-            // }
-            // System.out.println();
         }
 
         return dp[amount];
     }
-
-   }
+}
