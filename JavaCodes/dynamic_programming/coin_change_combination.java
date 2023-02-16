@@ -3,32 +3,30 @@ import java.util.*;
 
 public class coin_change_combination {
     public static void main(String[] args) throws NumberFormatException, IOException {
+      
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        int[] coins = new int[n];
+        int [] coins = new int[n];
 
         for (int i = 0; i < n; i++) {
             coins[i] = Integer.parseInt(br.readLine());
         }
-        
+
         Arrays.sort(coins);
-        
+
         int amt = Integer.parseInt(br.readLine());
-        
         int [] dp = new int[amt+1];
-        for (int i = 0; i < amt+1; i++) {
-            dp[i] = -1;
+        dp[0] = 1;
+        for(int i=0;i<n;i++){
+            for(int j=coins[i];j<amt+1;j++){
+                dp[j] = dp[j] + dp[j-coins[i]];
+            }
+
         }
-        for (int i = 1; i < amt+1; i++) {
-            dp[i] = solution(dp,coins,i);
-            // System.out.println(i+" = "+dp[i]);
-        }
+
+
 
         System.out.println(dp[amt]);
-
-
-        
-        
         
         // Solution 1
         // int [][] dp = new int[n+1][amt+1];
