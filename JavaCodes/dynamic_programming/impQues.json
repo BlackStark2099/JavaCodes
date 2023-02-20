@@ -13,6 +13,11 @@
             "target_sum_dp":"https://nados.io/question/target-sum-subsets-dp",
             "Video" : "",
             "remark" : "not solved in first attempt ! please retry"    
+        },
+        {
+            "arrange_buildings" : "https://nados.io/question/arrange-buildings",
+            "Video" : "https://youtube.com/watch?v=WQ18oNhwxw8&si=EnSIkaIECMiOmarE&t=3481",
+            "remark" : "Important concept"
         }
     ]
 }
