@@ -18,6 +18,11 @@
             "arrange_buildings" : "https://nados.io/question/arrange-buildings",
             "Video" : "https://youtube.com/watch?v=WQ18oNhwxw8&si=EnSIkaIECMiOmarE&t=3481",
             "remark" : "Important concept"
+        },
+        {
+            "paint_fence" : "https://nados.io/question/paint-fence",
+            "Video" : "https://youtube.com/watch?v=lEl6IfLySOA&si=EnSIkaIECMiOmarE&t=9502",
+            "remark" : "not done in 1st attempt need a redo"   
         }
     ]
 }
