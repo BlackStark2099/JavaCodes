@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 public class paint_house_many_colours {
     public static void main(String[] args) throws NumberFormatException, IOException {

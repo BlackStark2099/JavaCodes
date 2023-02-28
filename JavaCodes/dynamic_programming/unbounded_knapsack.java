@@ -1,4 +1,3 @@
-import java.util.*;
 import java.io.*;
 public class unbounded_knapsack {
     public static void main(String[] args) throws NumberFormatException, IOException {
