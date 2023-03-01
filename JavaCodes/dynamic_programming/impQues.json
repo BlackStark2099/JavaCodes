@@ -23,6 +23,11 @@
             "paint_fence" : "https://nados.io/question/paint-fence",
             "Video" : "https://youtube.com/watch?v=lEl6IfLySOA&si=EnSIkaIECMiOmarE&t=9502",
             "remark" : "not done in 1st attempt need a redo"   
+        },
+        {
+            "tiling_with_2x1_tiles" : "https://nados.io/question/tiling-with-2-1-tiles",
+            "Video" : "https://youtube.com/watch?v=lEl6IfLySOA&si=EnSIkaIECMiOmarE&t=7081",
+            "remark" : "to be revised IMP concept"  
         }
     ]
 }

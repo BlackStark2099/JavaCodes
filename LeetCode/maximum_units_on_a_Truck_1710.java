@@ -1,5 +1,7 @@
 package LeetCode;
 
+import java.util.Arrays;
+
 class Solution {
     class Item implements Comparable<Item>{
         int boxes;
