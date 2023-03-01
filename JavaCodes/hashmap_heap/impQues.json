@@ -3,6 +3,11 @@
         {
             "Write Hashmap" : "https://nados.io/question/write-hashmap  ",
             "Video" : "https://youtu.be/74Knc_4K-Y0?t=7444"
+        },
+        {
+            "count_of_subarrays_with_equal_number_of_zeroes_and_ones" : "https://nados.io/question/count-of-subarrays-with-equal-number-of-zeroes-and-ones",
+            "Video" : "https://youtube.com/watch?v=MRroLFOt0Yg&si=EnSIkaIECMiOmarE",
+            "remark" : "to be revised IMP question wrt concepts"
         }
     ]
 }  
