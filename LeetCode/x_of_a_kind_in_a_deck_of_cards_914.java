@@ -1,3 +1,7 @@
+package LeetCode;
+
+import java.util.HashMap;
+
 class Solution {
     public boolean hasGroupsSizeX(int[] deck) {
         HashMap<Integer,Integer> map = new HashMap<>();
