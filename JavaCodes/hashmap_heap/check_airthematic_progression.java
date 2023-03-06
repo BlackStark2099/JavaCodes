@@ -1,10 +1,10 @@
 package JavaCodes.hashmap_heap;
+import java.util.*;
 
 public class check_airthematic_progression {
 
-    import java.util.*;
 
-public class Main {
+
 
     public static boolean solution(int[] arr) {
 		if(arr.length < 3) return true;
@@ -50,7 +50,7 @@ public class Main {
 		System.out.println(solution(arr));
 	}
 
-}
+
 
     
 }
