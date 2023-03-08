@@ -18,6 +18,10 @@
         {
             "X of a Kind in a Deck of Cards - 914" : "https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/",
             "remark" : "to be revised" 
+        },
+        {
+            "rabbit_in_forest" : "https://leetcode.com/problems/rabbits-in-forest/description/",
+            "remark" : "to be revised"
         }
     ]
 }
