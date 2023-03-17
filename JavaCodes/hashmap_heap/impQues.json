@@ -8,6 +8,10 @@
             "count_of_subarrays_with_equal_number_of_zeroes_and_ones" : "https://nados.io/question/count-of-subarrays-with-equal-number-of-zeroes-and-ones",
             "Video" : "https://youtube.com/watch?v=MRroLFOt0Yg&si=EnSIkaIECMiOmarE",
             "remark" : "to be revised IMP question wrt concepts"
+        },{
+            "Tricky Sorting Cost":"https://practice.geeksforgeeks.org/problems/morning-assembly3038/1",
+            "Video" : "https://youtube.com/watch?v=MG5Xo0V2j4M&si=EnSIkaIECMiOmarE&t=7326",
+            "remark" : "imp concept"
         }
     ]
 }  
