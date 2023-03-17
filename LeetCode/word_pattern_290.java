@@ -16,10 +16,7 @@ class Solution {
                 }
             }else{
                 if(set.contains(stArr[i])) {
-                // System.out.println("helo");
-                    
                     return false;
-                
                 }map.put(s.charAt(i),stArr[i]);
                 set.add(stArr[i]);
             }
