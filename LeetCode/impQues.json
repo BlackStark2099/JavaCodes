@@ -10,6 +10,10 @@
             "House_robber" : "https://nados.io/question/arrange-buildings",
             "Video" : "https://youtube.com/watch?v=gLQlxPl92eo&si=EnSIkaIECMiOmarE&t=9230",
             "remark" : "for new recursive approach"
+        },
+        {
+            "target_sum_494" : "https://leetcode.com/problems/target-sum/description/",
+            "remark" : "Very important question with very bright concept"
         }
     ],
     "hashmap" : [
